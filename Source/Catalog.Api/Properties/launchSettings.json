@@ -1,0 +1,24 @@
+ {
+  "profiles": {
+
+    "Catalog.Api": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:6500",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIROMENT": "Development"
+      }
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:15805",
+      "sslPort": 0
+    }
+  }
+}
