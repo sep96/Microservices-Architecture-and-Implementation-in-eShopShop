@@ -57,7 +57,7 @@ namespace Catalog.Api.Repository
         {
             var updateResult = await _context
                                         .Products
-                                        .ReplaceOneAsync(filter: g => g.Id == product.Id, replacement: product);
+                                        .ReplaceOneAsync(filter: g => g.ID == product.ID, replacement: product);
 
             return updateResult.IsAcknowledged
                     && updateResult.ModifiedCount > 0;
@@ -65,7 +65,7 @@ namespace Catalog.Api.Repository
 
         public async Task<bool> DeleteProductAsync(string id)
         {
-            FilterDefinition<Product> filter = Builders<Product>.Filter.Eq(p => p.Id, id);
+            FilterDefinition<Product> filter = Builders<Product>.Filter.Eq(p => p.ID, id);
 
             DeleteResult deleteResult = await _context
                                                 .Products

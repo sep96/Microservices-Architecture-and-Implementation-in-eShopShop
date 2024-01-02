@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8YmB/pcv1pzXcMJ1/NL6Rbnn1CIdN1mvNnR9xoYPUR0PUgKoDK6Hugoy2/60mcx/dByfryz/7J1TeG9yTvO+gw==",
+  "dgSpecHash": "xRXuceU5NPgQnzPB4quEgrBs15C7o5Du8vI6bMpWYo1nx1qS+zIEeSNOgGuyNvFicznfyBzTMwgrEl20BmrUyw==",
   "success": true,
   "projectFilePath": "D:\\Project\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Catalog.Api\\Catalog.Api.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\Caroline\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\Caroline\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Caroline\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\Caroline\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\Caroline\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Caroline\\.nuget\\packages\\mongodb.bson\\2.23.1\\mongodb.bson.2.23.1.nupkg.sha512",
     "C:\\Users\\Caroline\\.nuget\\packages\\mongodb.driver\\2.23.1\\mongodb.driver.2.23.1.nupkg.sha512",
