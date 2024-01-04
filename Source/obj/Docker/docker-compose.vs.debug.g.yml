@@ -3,7 +3,6 @@ version: '3.4'
 services:
   catalog.api:
     image: catalogapi:dev
-    container_name: Catalog.Api
     build:
       target: base
       labels:

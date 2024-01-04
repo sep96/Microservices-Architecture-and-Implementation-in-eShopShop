@@ -2,7 +2,6 @@ version: '3.4'
 
 services:
   catalog.api:
-    container_name: Catalog.Api
     build:
       labels:
         com.microsoft.created-by: "visual-studio"

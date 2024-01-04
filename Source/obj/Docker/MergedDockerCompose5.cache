@@ -1,0 +1,22 @@
+name: dockercompose18136026455286380156
+services:
+  catalog.api:
+    build:
+      context: D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source
+      dockerfile: Catalog.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: catalogapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+  catalogdb:
+    image: mongo
+    networks:
+      default: null
+networks:
+  default:
+    name: dockercompose18136026455286380156_default

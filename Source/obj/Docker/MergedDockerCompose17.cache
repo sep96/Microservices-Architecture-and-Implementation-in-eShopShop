@@ -1,0 +1,39 @@
+name: dockercompose18136026455286380156
+services:
+  catalog.api:
+    build:
+      context: D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source
+      dockerfile: Catalog.Api/Dockerfile
+    container_name: catalog.api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DatabaseSettings:ConnectionString: mongodb://catalogdb:27017
+    image: catalogapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+  catalogdb:
+    container_name: catalogdb
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: "27017"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: mongo_data
+      target: /data/db
+      volume: {}
+networks:
+  default:
+    name: dockercompose18136026455286380156_default
+volumes:
+  mongo_data:
+    name: dockercompose18136026455286380156_mongo_data
