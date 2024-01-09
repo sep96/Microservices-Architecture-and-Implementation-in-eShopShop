@@ -8,7 +8,10 @@ services:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: Catalog.Api
       target: base
-    container_name: Catalog.Api
+    container_name: catalog.api
+    depends_on:
+      catalogdb:
+        condition: service_started
     entrypoint:
     - tail
     - -f
@@ -17,6 +20,7 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
       DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      DatabaseSettings:ConnectionString: mongodb://catalogdb:27017
       NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2
     image: catalogapi:dev
     labels:
@@ -32,6 +36,7 @@ services:
     ports:
     - mode: ingress
       target: 80
+      published: "8000"
       protocol: tcp
     tty: true
     volumes:
@@ -80,6 +85,25 @@ services:
       read_only: true
       bind:
         create_host_path: true
+  catalogdb:
+    container_name: catalogdb
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: "27017"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: mongo_data
+      target: /data/db
+      volume: {}
 networks:
   default:
     name: dockercompose18136026455286380156_default
+volumes:
+  mongo_data:
+    name: dockercompose18136026455286380156_mongo_data
