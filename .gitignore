@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.dll
+*.BuildWithSkipAnalyzers
+*.CopyComplete
+*.exe
+*.txt
+/Source/Basket/Basket.Api/obj/Debug/net7.0
+/Source/.vs/eShopShop/DesignTimeBuild/.dtbcache.v2
+*.vsidx
+/Source/.vs/eShopShop/FileContentIndex/3e284805-6891-484e-a320-09d1c11e8f6e.vsidx
+/Source/.vs/eShopShop/FileContentIndex/d914f89e-c2f1-4883-ae5e-094d0e037a23.vsidx
+/Source/.vs/eShopShop/v17/.suo
+/Source/Basket/Basket.Api/bin/Debug/net7.0
