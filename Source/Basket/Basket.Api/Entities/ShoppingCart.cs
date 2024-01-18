@@ -23,10 +23,6 @@
                 }
                 return total;
             }
-            set
-            {
-
-            };
         }
     }
 }
