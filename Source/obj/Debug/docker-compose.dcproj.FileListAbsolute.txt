@@ -21,3 +21,17 @@ D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin
 D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Catalog.Api.pdb
 D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\obj\Debug\docker-compose.dcproj.CopyComplete
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Basket.Api.deps.json
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Basket.Api.runtimeconfig.json
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Basket.Api.exe
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Basket.Api.dll
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Newtonsoft.Json.dll
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Microsoft.Extensions.Options.dll
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\StackExchange.Redis.dll
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Pipelines.Sockets.Unofficial.dll
+D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\bin\Debug\Basket.Api.pdb

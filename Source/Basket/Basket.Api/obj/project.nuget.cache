@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8EKKrsXxhuHn2VU37MdScHtbdIZYLOYeZfdppN7eW5c23/eQ3Dfm99ZweFebbD5eb7Map45OLuMOjSmkD0F/DQ==",
+  "dgSpecHash": "5Kf2WfL6oCIFmk952EOAnV/RsyFbKMcJPXUyukUTm2a9xMpA8PNcffV7PnM/9Ae/aRNZmkpmgKpLiftGlOriGg==",
   "success": true,
   "projectFilePath": "D:\\Project\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Basket\\Basket.Api\\Basket.Api.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\Caroline\\.nuget\\packages\\microsoft.extensions.options\\8.0.1\\microsoft.extensions.options.8.0.1.nupkg.sha512",
     "C:\\Users\\Caroline\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Caroline\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\Caroline\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\Caroline\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Caroline\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "C:\\Users\\Caroline\\.nuget\\packages\\stackexchange.redis\\2.6.122\\stackexchange.redis.2.6.122.nupkg.sha512",
