@@ -7,6 +7,9 @@ services:
     
   basketdb:
     image: redis:alpine
+    
+  pontainer:
+    image: portainer/portainer-ce
 
   catalog.api:
     image: ${DOCKER_REGISTRY-}catalogapi
@@ -22,3 +25,4 @@ services:
 
 volumes:
   mongo_data:
+  pontainer_data:

@@ -1,0 +1,100 @@
+name: dockercompose18136026455286380156
+services:
+  basket.api:
+    build:
+      context: D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source
+      dockerfile: Basket/Basket.Api/Dockerfile
+    container_name: basket.api
+    depends_on:
+      basketdb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      CacheSetting:ConnectionString: basketdb:6379
+    image: basketapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8001"
+      protocol: tcp
+  basketdb:
+    container_name: basketdb
+    image: redis:alpine
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: "6379"
+      protocol: tcp
+    restart: always
+  catalog.api:
+    build:
+      context: D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source
+      dockerfile: Catalog.Api/Dockerfile
+    container_name: catalog.api
+    depends_on:
+      catalogdb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DatabaseSettings:ConnectionString: mongodb://catalogdb:27017
+    image: catalogapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8000"
+      protocol: tcp
+  catalogdb:
+    container_name: catalogdb
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: "27017"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: mongo_data
+      target: /data/db
+      volume: {}
+  pontainer:
+    container_name: pontainer
+    image: portainer/portainer-ce
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 8080
+      published: "8080"
+      protocol: tcp
+    - mode: ingress
+      target: 9000
+      published: "9000"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: bind
+      source: /var/run/docker.sock
+      target: /var/run/docker.sock
+      bind:
+        create_host_path: true
+    - type: volume
+      source: pontainer_data
+      target: /data
+      volume: {}
+networks:
+  default:
+    name: dockercompose18136026455286380156_default
+volumes:
+  mongo_data:
+    name: dockercompose18136026455286380156_mongo_data
+  pontainer_data:
+    name: dockercompose18136026455286380156_pontainer_data

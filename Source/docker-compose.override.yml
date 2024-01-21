@@ -15,6 +15,16 @@ services:
     ports:
       - "6379:6379"
 
+  pontainer:
+    container_name:  pontainer
+    restart: always
+    ports:
+      - "8080:8080"
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock 
+      - pontainer_data:/data
+
   catalog.api:
     container_name: catalog.api
     environment:
