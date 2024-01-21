@@ -1,4 +1,5 @@
 using Basket.Api.Repositories;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,7 @@ builder.Services.AddScoped<IBasketRepository, BasketRepository>();
 builder.Services.AddStackExchangeRedisCache(opt => {
     opt.Configuration = builder.Configuration["CacheSetting:ConnectionString"];
 });
+//builder.Services.AddHealthChecks().AddRedis(Configuration["CacheSettings:ConnectionString"], "Redis Health", HealthStatus.Degraded);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
