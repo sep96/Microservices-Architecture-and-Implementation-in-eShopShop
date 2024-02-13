@@ -11,21 +11,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_basket.api$
     volumes:
-      - D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\Basket\Basket.Api:/app
-      - D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source:/src
-      - C:\Users\Caroline\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\Caroline\.nuget\packages\:/root/.nuget/packages:ro
-      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages2:ro
+      - C:\Users\sepehr.ashtari\Desktop\project\GitRepository\Microservices-Architecture-and-Implementation-in-eShopShop\Source\Basket\Basket.Api:/app
+      - C:\Users\sepehr.ashtari\Desktop\project\GitRepository\Microservices-Architecture-and-Implementation-in-eShopShop\Source:/src
+      - C:\Users\sepehr.ashtari\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_basket.api$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath /root/.nuget/fallbackpackages2  \"/app/bin/Debug/net7.0/Basket.Api.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_basket.api$ \"D:/Project/Microservices-Architecture-and-Implementation-in-eShopShop/Source/Basket/Basket.Api/bin/Debug/net7.0/Basket.Api.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -39,21 +37,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_catalog.api$
     volumes:
-      - D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source\Catalog.Api:/app
-      - D:\Project\Microservices-Architecture-and-Implementation-in-eShopShop\Source:/src
-      - C:\Users\Caroline\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\Caroline\.nuget\packages\:/root/.nuget/packages:ro
-      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages2:ro
+      - C:\Users\sepehr.ashtari\Desktop\project\GitRepository\Microservices-Architecture-and-Implementation-in-eShopShop\Source\Catalog.Api:/app
+      - C:\Users\sepehr.ashtari\Desktop\project\GitRepository\Microservices-Architecture-and-Implementation-in-eShopShop\Source:/src
+      - C:\Users\sepehr.ashtari\vsdbg\vs2017u5:/remote_debugger:rw
+#$nuget_volume_mapping_catalog.api$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath /root/.nuget/fallbackpackages2  \"/app/bin/Debug/net7.0/Catalog.Api.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_catalog.api$ \"D:/Project/Microservices-Architecture-and-Implementation-in-eShopShop/Source/Catalog.Api/bin/Debug/net7.0/Catalog.Api.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true

@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Basket\\Basket.Api\\Basket.Api.csproj": {}
+    "C:\\Users\\sepehr.ashtari\\Desktop\\project\\GitRepository\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Basket\\Basket.Api\\Basket.Api.csproj": {}
   },
   "projects": {
-    "D:\\Project\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Basket\\Basket.Api\\Basket.Api.csproj": {
+    "C:\\Users\\sepehr.ashtari\\Desktop\\project\\GitRepository\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Basket\\Basket.Api\\Basket.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Basket\\Basket.Api\\Basket.Api.csproj",
+        "projectUniqueName": "C:\\Users\\sepehr.ashtari\\Desktop\\project\\GitRepository\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Basket\\Basket.Api\\Basket.Api.csproj",
         "projectName": "Basket.Api",
-        "projectPath": "D:\\Project\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Basket\\Basket.Api\\Basket.Api.csproj",
-        "packagesPath": "C:\\Users\\Caroline\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Basket\\Basket.Api\\obj\\",
+        "projectPath": "C:\\Users\\sepehr.ashtari\\Desktop\\project\\GitRepository\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Basket\\Basket.Api\\Basket.Api.csproj",
+        "packagesPath": "C:\\Users\\sepehr.ashtari\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sepehr.ashtari\\Desktop\\project\\GitRepository\\Microservices-Architecture-and-Implementation-in-eShopShop\\Source\\Basket\\Basket.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Caroline\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sepehr.ashtari\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,7 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "Y:\\H.Ghaffari\\.Sepehr\\Nugets": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -86,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
